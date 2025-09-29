@@ -410,6 +410,7 @@ int main() {
 	int score = 0;
 
 	initgraph(window_size[0], window_size[1]);
+	SetWindowText(GetHWnd(), _T("Öí¶ùÉú´æÌôÕ½"));
 	loadimage(&menu_image, _T("img/menu.png"));
 	loadimage(&background_image, _T("img/background.png"));
 	BeginBatchDraw();
@@ -476,8 +477,6 @@ int main() {
 		}
 		
 		FlushBatchDraw();
-
-
 
 		DWORD end_time = GetTickCount();
 		DWORD delay_time = end_time - start_time;
